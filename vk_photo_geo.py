@@ -14,7 +14,7 @@ vk = vk_session.get_api()
 
 for i in vk.photos.search(lat=lat_t, long=long_t, radius=radius_t, count=count_t)['items']:
     for sz in i['sizes']:
-        if sz['type'] == 'y':
+        if sz['type'] == 'y': #y - размер фотографии https://vk.com/dev/photos.search
             url = (sz["url"])
             img_data = requests.get(url).content
             tail = os.path.split(url)[1]
