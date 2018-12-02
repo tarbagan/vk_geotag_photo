@@ -2,10 +2,10 @@ import vk_api
 import requests
 import os
 
-lat_t = 36.021225 
-long_t = 129.337693
-radius_t = 5000
-count_t = 1000
+lat_t = 36.021225  #Latitude https://www.latlong.net/
+long_t = 129.337693 #Longitude https://www.latlong.net/
+radius_t = 5000 #радиус в метрах
+count_t = 1000 # максимальное колиество фотографий
 folder = "/folder/photo_save/"
 
 vk_session = vk_api.VkApi( 'YOULOGIN', 'PASS' )
